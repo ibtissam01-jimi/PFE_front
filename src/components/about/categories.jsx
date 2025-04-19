@@ -26,12 +26,12 @@ const [categories,setCategories] = useState([]);
               className="relative rounded-xl overflow-hidden shadow-lg group h-80 cursor-pointer"
             >
               <img
-                src={item.img}
+                src={`http://localhost:8000/images/cities/m1.jpg`}
                 alt={item.name}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                <h2 className="text-white text-2xl font-semibold text-center px-2">{item.title}</h2>
+                <h2 className="text-white text-2xl font-semibold text-center px-2">{item.name}</h2>
               </div>
             </div>
           ))}
